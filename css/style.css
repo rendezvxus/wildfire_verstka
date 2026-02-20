@@ -80,6 +80,37 @@ header {
     gap: 50px;
 }
 
+.latest-articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 780px;
+    width: 100%;
+    height: 1370px;
+    padding-top: 120px;
+    padding-bottom: 240px;
+    background-color: #CCCCCC;
+}
+
+.latest-articles-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 128px;
+}
+
+.latest-articles-callback {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+}
+
+/* prestyled */
+
 .h1-orange {
     font-size: 48px;
     font-weight: 400;
@@ -208,6 +239,7 @@ header {
     font-size: 23px;
     font-weight: 400;
     color: var(--font-grey);
+    background-color: transparent;
 }
 
 .callback-btn {
