@@ -15,13 +15,75 @@
     --trasntion-duration: .3s;
 }
 
-.wrapper {
-    background-color: #aaaaaa;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 19px;
+    padding: 0px 120px;
+}
+
+.logo {
+    display:flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+}
+ .menu-search-btn {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+ }
+
+.menu a {
+    text-decoration: none;
+}
+
+.hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 780px;
+    display: flex;
+    align-items: center;
+}
+
+.hero_img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 780px;
+    object-fit: cover;
+    box-shadow: -150px 0px 150px 0px #02160B;
+    z-index: -10;
+}
+
+.hero-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+    margin-left: 120px;
+    gap: 50px;
 }
 
 .h1-orange {
     font-size: 48px;
     font-weight: 400;
+    letter-spacing: 2px;
     color: var(--orange-main);
 }
 
@@ -54,7 +116,8 @@
     font-size: 32px;
     font-weight: 400;
     text-transform: uppercase;
-    color: var(--font-light)
+    color: var(--font-light);
+    cursor: default;
 }
 
 .text-menu-ui {
@@ -80,4 +143,73 @@
     font-size: 17px;
     font-weight: 400;
     color: var(--font-light);
+}
+
+.button-regular {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--orange-main);
+    transition: background-color var(--trasntion-duration);
+}
+
+.button-regular:hover {
+    background-color: var(--orange-light);
+    cursor: pointer;
+}
+
+.button-regular:active {
+    background-color: var(--orange-dark);
+}
+.button-hollow {
+    border: 2px var(--orange-main) solid;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: background-color var(--trasntion-duration), border-color var(--trasntion-duration);
+}
+
+.button-hollow:hover{
+    background-color: var(--orange-main);
+    cursor: pointer;
+}
+
+.button-hollow:active {
+    border-color: var(--orange-dark);
+    background-color: var(--orange-dark);
+}
+
+.donate-btn {
+    width: 160px;
+    height: 60px;
+}
+
+.login-btn {
+    width: 120px;
+    height: 50px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    width: 660px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.callback-input {
+    width: 540px;
+    padding-left: 15px;
+    border: 1px var(--font-grey) solid;
+    border-right: transparent;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: 'Roboto';
+    font-size: 23px;
+    font-weight: 400;
+    color: var(--font-grey);
+}
+
+.callback-btn {
+    width: 120px;
+    border-radius: 0px;
 }
