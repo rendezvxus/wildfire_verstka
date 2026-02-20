@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+:root {
+    font-family: 'Open Sans';
+
+    --orange-main: #CD6326;
+    --orange-light: #E39128;
+    --orange-dark: #8F5613;
+
+    --font-light: #F7F7F7;
+    --font-grey: #666666;
+    --font-dark: #333333;
+    
+    --trasntion-duration: .3s;
+}
+
+.wrapper {
+    background-color: #aaaaaa;
+}
+
+.h1-orange {
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--orange-main);
+}
+
+.h2-dark {
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--font-dark);
+}
+
+.sh2-grey {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--font-grey);
+}
+
+.h3-dark {
+    font-size: 27px;
+    font-weight: 400;
+    color: var(--font-dark);
+}
+
+.h4-light {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--font-light);
+}
+
+.wildlife {
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--font-light)
+}
+
+.text-menu-ui {
+    font-size: 23px;
+    font-weight: 400;
+    color: var(--font-light);
+}
+
+.text-regular-ui {
+    font-family: 'Roboto';
+    font-size: 23px;
+    font-weight: 400;
+    color: var(--font-light);
+}
+
+.text-regular-light {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--font-light);
+}
+
+.text-small-light {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--font-light);
+}
