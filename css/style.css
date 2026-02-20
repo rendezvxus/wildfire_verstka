@@ -24,7 +24,6 @@ a, p, h1, h2, h3, h4, h5, h6 {
 a {
     text-decoration: none;
     cursor: pointer;
-    z-index: 1;
 }
 
 /* prestyled */
@@ -179,6 +178,7 @@ header {
     align-items: center;
     margin-top: 19px;
     padding: 0px 120px;
+    z-index: 10;
 }
 
 .logo {
