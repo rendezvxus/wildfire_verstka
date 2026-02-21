@@ -5,5 +5,16 @@ new Swiper('.slider', {
         nextEl: '.swiper-button-next-custom',
         prevEl: '.swiper-button-prev-custom'
     },
-    loop: true
+    loop: true,
+    breakpoints: {
+        361: {
+            slidesPerView: 3,
+            spaceBetween: 60,
+            centeredSlides: true,
+        },
+        360: {
+            slidesPerView: 1,
+            centeredSlides: true,
+        }
+    }
 });
