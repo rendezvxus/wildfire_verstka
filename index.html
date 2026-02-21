@@ -10,10 +10,15 @@
 
 <body>
     <header>
-        <a class="logo" href="/index.html">
-            <img src="media/svgg.svg" alt="" class="logo_img">
-            <p class="wildlife">wildlife</p>
-        </a>
+        <div class="logo-wrapper">
+            <a class="logo" href="/index.html">
+                <img src="media/svgg.svg" alt="" class="logo_img">
+                <p class="wildlife">wildlife</p>
+            </a>
+            <button class="button-hollow login-btn-logo">
+                <span class="text-regular-ui">Sign in</span>
+            </button>
+        </div>
         <div class="menu">
             <a href="" class="text-menu-ui">Blog</a>
             <a href="" class="text-menu-ui">Contacts</a>
@@ -34,8 +39,12 @@
                     <button class="button-regular donate-btn">
                         <span class="text-regular-ui">Donate</span>
                     </button>
+                    <img src="media/hero.jpg" alt="Foxie" class="hero_img_overlain">
                 </div>
                 <img src="media/hero.jpg" alt="Foxie" class="hero_img">
+                <a href="#articles" class="hero-to-articles">
+                    <img src="media/right.svg" alt="to articles" class="hta-arrow">
+                </a>
             </div>
             <div class="latest-articles" id="articles">
                 <div class="latest-articles-head">
@@ -107,7 +116,7 @@
             </div>
         </div>
     </main>
-    <footer>
+    <!-- <footer>
         <div class="footer-wrapper">
             <a class="logo" href="/index.html">
                 <img src="media/svgg.svg" alt="" class="logo_img">
@@ -134,7 +143,7 @@
             </div>
         </div>
         <img src="media/footer.jpg" alt="leaf" class="footer_img">
-    </footer>
+    </footer> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
