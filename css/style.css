@@ -29,7 +29,6 @@ a {
     transition: color var(--transition-duration-fast);
     text-decoration: none;
     cursor: pointer;
-    z-index: 1;
 }
 
 a:hover {
@@ -242,7 +241,6 @@ header {
     height: 780px;
     display: flex;
     align-items: center;
-    z-index: -1;
 }
 
 .hero_img {
@@ -272,8 +270,8 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    top: 515px;
+    position: absolute;
+    top: 780px;
     width: 100%;
     height: 1010px;
     padding-top: 120px;
@@ -297,7 +295,7 @@ header {
 }
 
 footer {
-    position: relative;
+    position: absolute;
     top: 2148px;
     width: 100%;
 }
@@ -330,11 +328,6 @@ footer {
     background-color: transparent;
     border: transparent;
     cursor: pointer;
-    transition: transform var(--trasntion-duration);
-}
-
-.social-btn:hover {
-    transform: scale(1.15);
 }
 
 .social-icon {
@@ -530,9 +523,10 @@ footer {
     
     .latest-articles {
         position: relative;
+        top: 519px;
         height:fit-content;
         padding-top: 30px;
-        padding-bottom: 60px;
+        padding-bottom: 110px;
         gap: 40px;
     }
 
