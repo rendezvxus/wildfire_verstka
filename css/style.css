@@ -12,7 +12,8 @@
     --font-grey: #666666;
     --font-dark: #333333;
     
-    --trasntion-duration: .3s;
+    --transition-duration: .3s;
+    --transition-duration-fast: .1s;
 }
 
 /* main tags */
@@ -22,8 +23,13 @@ a, p, h1, h2, h3, h4, h5, h6 {
 }
 
 a {
+    transition: color var(--transition-duration-fast);
     text-decoration: none;
     cursor: pointer;
+}
+
+a:hover {
+    color: var(--orange-light);
 }
 
 /* prestyled */
@@ -65,7 +71,7 @@ a {
     font-weight: 400;
     text-transform: uppercase;
     color: var(--font-light);
-    cursor: default;
+    cursor: pointer;
 }
 
 .text-menu-ui {
@@ -97,7 +103,7 @@ a {
     border: none;
     border-radius: 5px;
     background-color: var(--orange-main);
-    transition: background-color var(--trasntion-duration);
+    transition: background-color var(--transition-duration);
 }
 
 .button-regular:hover {
@@ -112,7 +118,7 @@ a {
     border: 2px var(--orange-main) solid;
     border-radius: 5px;
     background-color: transparent;
-    transition: background-color var(--trasntion-duration), border-color var(--trasntion-duration);
+    transition: background-color var(--transition-duration), border-color var(--transition-duration);
 }
 
 .button-hollow:hover{
@@ -136,7 +142,7 @@ a {
     z-index: 10;
 }
 
-.input-container {
+.input-form {
     display: flex;
     flex-direction: row;
     width: 660px;
@@ -185,17 +191,35 @@ header {
     flex-direction: row;
     gap: 15px;
     align-items: center;
+    z-index: 1;
+    transition: filter var(--transition-duration-fast);
 }
+
+.logo:hover {
+   filter: invert(55%) sepia(100%) saturate(486%) hue-rotate(352deg) brightness(94%) contrast(88%);
+}
+
 
 .menu {
     display: flex;
     flex-direction: row;
     gap: 60px;
     align-items: center;
+    z-index: 1;
 }
- .menu-search-btn {
+
+.menu-search-btn {
     border: 0;
     background-color: transparent;
+    cursor: pointer;
+ }
+
+ .menu-search-btn img {
+    transition: filter var(--transition-duration-fast);
+ }
+
+ .menu-search-btn:hover img {
+    filter: invert(55%) sepia(100%) saturate(486%) hue-rotate(352deg) brightness(94%) contrast(88%);
     cursor: pointer;
  }
 
@@ -285,10 +309,19 @@ footer {
     gap: 27px;
 }
 
+
 .social-btn {
     background-color: transparent;
     border: transparent;
     cursor: pointer;
+}
+
+.social-icon {
+    transition: transform var(--transition-duration);
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
 }
 
 .footer_img {

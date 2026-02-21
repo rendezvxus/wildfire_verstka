@@ -10,10 +10,10 @@
 
 <body>
     <header>
-        <div class="logo">
+        <a class="logo" href="/index.html">
             <img src="media/svgg.svg" alt="" class="logo_img">
             <p class="wildlife">wildlife</p>
-        </div>
+        </a>
         <div class="menu">
             <a href="" class="text-menu-ui">Blog</a>
             <a href="" class="text-menu-ui">Contacts</a>
@@ -91,22 +91,28 @@
                 </div>
                 <div class="latest-articles-callback">
                     <h3 class="h3-dark">Get notified about new amazing articles</h3>
-                    <div class="input-container">
-                        <input type="text" class="callback-input" placeholder="Email">
-                        <button class="button-regular callback-btn">
+                    <form action="" method="post" class="input-form">
+                        <input 
+                            type="email"
+                            name="email" 
+                            class="callback-input" 
+                            placeholder="Email" 
+                            required
+                        >
+                        <button type="submit" class="button-regular callback-btn">
                             <span class="text-regular-ui">Send</span>
                         </button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
     </main>
     <footer>
         <div class="footer-wrapper">
-            <div class="logo">
+            <a class="logo" href="/index.html">
                 <img src="media/svgg.svg" alt="" class="logo_img">
                 <p class="wildlife">wildlife</p>
-            </div>
+            </a>
             <div class="menu-footer">
                 <a href="#articles" class="text-menu-ui">Articles</a>
                 <a href="" class="text-menu-ui">About us</a>
