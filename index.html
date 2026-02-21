@@ -9,24 +9,29 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="media/svgg.svg" alt="" class="logo_img">
-            <p class="wildlife">wildlife</p>
-        </div>
-        <div class="menu">
-            <a href="" class="text-menu-ui">Blog</a>
-            <a href="" class="text-menu-ui">Contacts</a>
-            <button class="menu-search-btn">
-                <img src="media/Vector.svg" alt="" class="menu-search_img">
-            </button>
-            <button class="button-hollow login-btn">
-                <span class="text-regular-ui">Sign in</span>
-            </button>
-        </div>
-    </header>
     <main>
         <div class="wrapper">
+            <header>
+                <div class="logo-wrapper">
+                    <a class="logo" href="/index.html">
+                        <img src="media/svgg.svg" alt="" class="logo_img">
+                        <p class="wildlife">wildlife</p>
+                    </a>
+                    <button class="button-hollow login-btn-logo">
+                        <span class="text-regular-ui">Sign in</span>
+                    </button>
+                </div>
+                <div class="menu">
+                    <a href="" class="text-menu-ui">Blog</a>
+                    <a href="" class="text-menu-ui">Contacts</a>
+                    <button class="menu-search-btn">
+                        <img src="media/Vector.svg" alt="" class="menu-search_img">
+                    </button>
+                    <button class="button-hollow login-btn">
+                        <span class="text-regular-ui">Sign in</span>
+                    </button>
+                </div>
+            </header>
             <div class="hero">
                 <div class="hero-text-wrapper">
                     <h1 class="h1-orange">Survival</h1>
@@ -34,8 +39,12 @@
                     <button class="button-regular donate-btn">
                         <span class="text-regular-ui">Donate</span>
                     </button>
+                    <img src="media/hero.jpg" alt="Foxie" class="hero_img_overlain">
                 </div>
                 <img src="media/hero.jpg" alt="Foxie" class="hero_img">
+                <a href="#articles" class="hero-to-articles">
+                    <img src="media/right.svg" alt="to articles" class="hta-arrow">
+                </a>
             </div>
             <div class="latest-articles" id="articles">
                 <div class="latest-articles-head">
@@ -90,23 +99,29 @@
                     </div>
                 </div>
                 <div class="latest-articles-callback">
-                    <h3 class="h3-dark">Get notified about new amazing articles</h3>
-                    <div class="input-container">
-                        <input type="text" class="callback-input" placeholder="Email">
-                        <button class="button-regular callback-btn">
+                    <h3 class="h3-dark h-callback">Get notified about new amazing articles</h3>
+                    <form action="" method="post" class="input-form">
+                        <input 
+                            type="email"
+                            name="email" 
+                            class="callback-input" 
+                            placeholder="Email" 
+                            required
+                        >
+                        <button type="submit" class="button-regular callback-btn">
                             <span class="text-regular-ui">Send</span>
                         </button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
     </main>
     <footer>
         <div class="footer-wrapper">
-            <div class="logo">
+            <a class="logo" href="/index.html">
                 <img src="media/svgg.svg" alt="" class="logo_img">
-                <p class="wildlife">wildlife</p>
-            </div>
+                <p class="wildlife wildlife-ft">wildlife</p>
+            </a>
             <div class="menu-footer">
                 <a href="#articles" class="text-menu-ui">Articles</a>
                 <a href="" class="text-menu-ui">About us</a>
