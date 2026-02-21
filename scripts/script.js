@@ -4,5 +4,6 @@ new Swiper('.slider', {
     navigation: {
         nextEl: '.swiper-button-next-custom',
         prevEl: '.swiper-button-prev-custom'
-    }
+    },
+    loop: true
 });
