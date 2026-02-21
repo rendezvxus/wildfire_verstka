@@ -265,6 +265,10 @@ header {
     gap: 50px;
 }
 
+.hta-arrow {
+    display: none;
+}
+
 .latest-articles {
     display: flex;
     flex-direction: column;
@@ -322,7 +326,6 @@ footer {
     align-items: center;
     gap: 27px;
 }
-
 
 .social-btn {
     background-color: transparent;
